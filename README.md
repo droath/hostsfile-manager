@@ -4,6 +4,15 @@
 
 Provides a class to add/remove lines from the hosts file. It has been tested to work on *nix based systems, otherwise you'll need to supply the path to the hosts file.
 
+
+## Getting Started
+
+First, you'll need to download the hostsfile manager library using composer:
+
+```bash
+composer require droath/hostsfile-manager:^0.0.1
+```
+
 ## Examples
 
 **Add lines to the hosts file contents:**
