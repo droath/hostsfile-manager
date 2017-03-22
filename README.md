@@ -6,9 +6,13 @@ Provides a class to add/remove lines from the hosts file. It has been tested to 
 
 ## Examples
 
-**Add lines to hosts file:**
-The below code adds two entries into the hosts file.
+**Add lines to the hosts file contents:**
+
+The below code appends two entries to the hosts file contents. If any of those lines already exists then nothing is appended.
+
 ```php
+<?php
+
     $hosts_file = (new \Droath\HostsFileManager\HostsFile())
         ->setLine('127.0.0.1', 'local.sickslap.com')
         ->setLine('127.0.0.2', 'local.hiphopsmack.com');
@@ -18,9 +22,13 @@ The below code adds two entries into the hosts file.
 ```
 
 
-**Remove lines to hosts file:**
-The below code removes the one entry from the hosts file.
+**Remove a single line from hosts file:**
+
+The below code removes the one entry from the hosts file. All other lines within the hosts file remain untouched.
+
 ```php
+<?php
+
     $hosts_file = (new \Droath\HostsFileManager\HostsFile())
         ->setLine('127.0.0.2', 'local.hiphopsmack.com');
 
