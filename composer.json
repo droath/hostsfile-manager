@@ -1,0 +1,26 @@
+{
+    "name": "droath/hostsfile-manager",
+    "description": "Manage hosts file on nix based systems.",
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Travis Tomka",
+            "email": "underoathosx@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.5",
+        "mikey179/vfsStream": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Droath\\HostsFileManager\\": "./src"
+        }
+    }
+}
